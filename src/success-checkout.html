@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./output.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet" />
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body class="bg-creativehub-black font-poppins text-white">
+    <!-- Navbar -->
+	<nav class="w-full fixed top-0 bg-[#00000048] backdrop-blur-lg z-50">
+		<div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+			<a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+				<img src="../assets/logos/logo-singgle.svg" class="h-8" alt="Flowbite Logo" />
+				<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CreativeHub</span>
+			</a>
+			<button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:text-gray-600 dark:hover:bg-gray-200 dark:focus:ring-gray-400 "
+			aria-controls="mega-menu-full" aria-expanded="false">
+				<span class="sr-only">Open main menu</span>
+				<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+				</svg>
+			</button>
+			<div id="mega-menu-full" class="items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1">
+				<ul class="flex flex-col p-4 md:p-0 mt-4 border border-[#ffffff10] rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
+					<li>
+						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300" aria-current="page">Home</a>
+					</li>
+					<li>
+						<button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Categories <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+						</button>
+					</li>
+					<li>
+						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Stories</a>
+					</li>
+					<li>
+						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Benefits</a>
+					</li>
+					<li>
+						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">About</a>
+					</li>
+				</ul>
+			</div>
+
+			
+		</div>
+		<div id="mega-menu-full-dropdown" class="mt-1 bg-[#1E1E1E] border border-[#414141] hidden">
+			<div class="grid gap-3 max-w-screen-xl px-4 py-4 mx-auto sm:grid-cols-2 md:px-6">
+				<ul class="grid gap-y-3">
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+									<img src="../assets/icons/cart.svg" alt="icon" class="sm:w-full sm:h-auto">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">All Products</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Everything in One Place</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+									<img src="../assets/icons/laptop.svg" alt="icon" class="sm:w-full sm:h-auto">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">Templates</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Design Made Easy</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+									<img src="../assets/icons/book.svg" alt="icon" class="sm:w-full sm:h-auto">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">E-Books</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Read and Learn</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="grid gap-y-3">
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+									<img src="../assets/icons/hat.svg" alt="icon" class="sm:w-full sm:h-auto">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">Icons</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Icon Pack Selection</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px] flex shrink-0 items-center">
+									<img src="../assets/icons/pen.svg" alt="icon">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">Fonts</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Typography Selection</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px] flex shrink-0 items-center">
+									<img src="../assets/icons/check-3d.svg" alt="icon">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">UI Kits</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Best of Design Resources</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <section id="Success" class="container max-w-[12-0px] mx-auto">
+        <div class="w-full flex items-center justify-center min-h-[calc(100vh-74px)]">
+            <div class="flex flex-col items-center gap-[60px]">
+                <div class="flex flex-col items-center">
+                    <div class="flex shrink-0 w-[174px] h-[174px] relative -z-10">
+                        <img src="../assets/icons/check-3d.svg" alt="icon">
+                        <div class="flex shrink-0 w-[644px] absolute -translate-x-1/2 left-1/2 bottom-[35px] z-0">
+                            <img src="../assets/backgrounds/glitter.svg" alt="background">
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-center gap-1">
+                        <p
+                            class="font-semibold text-[36px] bg-clip-text text-transparent bg-gradient-to-r from-[#B05CB0] to-[#FCB16B]">
+                            Success Checkout</p>
+                        <p class="text-xs text-belibang-grey">Thank you for supporting our great creators</p>
+                    </div>
+                </div>
+                <a href="index.html"
+                    class="w-[306px] h-12 flex items-center justify-center rounded-full text-center bg-[#2D68F8] p-[8px_18px] font-semibold hover:bg-[#083297] active:bg-[#062162] transition-all duration-300">Check
+                    My Transactions</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Flowbite Plugins -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Swiper.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>

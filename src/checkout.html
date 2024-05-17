@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./output.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet" />
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body class="bg-creativehub-black font-poppins text-white">
+    <!-- Navbar -->
+	<nav class="w-full fixed top-0 bg-[#00000048] backdrop-blur-lg z-50">
+		<div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+			<a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+				<img src="../assets/logos/logo-singgle.svg" class="h-8" alt="Flowbite Logo" />
+				<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CreativeHub</span>
+			</a>
+			<button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:text-gray-600 dark:hover:bg-gray-200 dark:focus:ring-gray-400 "
+			aria-controls="mega-menu-full" aria-expanded="false">
+				<span class="sr-only">Open main menu</span>
+				<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+				</svg>
+			</button>
+			<div id="mega-menu-full" class="items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1">
+				<ul class="flex flex-col p-4 md:p-0 mt-4 border border-[#ffffff10] rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
+					<li>
+						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300" aria-current="page">Home</a>
+					</li>
+					<li>
+						<button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Categories <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+						</button>
+					</li>
+					<li>
+						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Stories</a>
+					</li>
+					<li>
+						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Benefits</a>
+					</li>
+					<li>
+						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">About</a>
+					</li>
+				</ul>
+			</div>
+
+			
+		</div>
+		<div id="mega-menu-full-dropdown" class="mt-1 bg-[#1E1E1E] border border-[#414141] hidden">
+			<div class="grid gap-3 max-w-screen-xl px-4 py-4 mx-auto sm:grid-cols-2 md:px-6">
+				<ul class="grid gap-y-3">
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+									<img src="../assets/icons/cart.svg" alt="icon" class="sm:w-full sm:h-auto">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">All Products</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Everything in One Place</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+									<img src="../assets/icons/laptop.svg" alt="icon" class="sm:w-full sm:h-auto">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">Templates</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Design Made Easy</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+									<img src="../assets/icons/book.svg" alt="icon" class="sm:w-full sm:h-auto">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">E-Books</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Read and Learn</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="grid gap-y-3">
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+									<img src="../assets/icons/hat.svg" alt="icon" class="sm:w-full sm:h-auto">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">Icons</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Icon Pack Selection</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px] flex shrink-0 items-center">
+									<img src="../assets/icons/pen.svg" alt="icon">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">Fonts</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Typography Selection</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+							<div class="flex gap-x-3 items-center">
+								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px] flex shrink-0 items-center">
+									<img src="../assets/icons/check-3d.svg" alt="icon">
+								</div>
+								<div class="flex flex-col gap-1">
+									<div class="font-semibold text-[10px] lg:text-sm text-white">UI Kits</div>
+									<span class="text-[8px] lg:text-xs text-creativehub-grey">Best of Design Resources</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <section id="checkout" class="container max-w-[1200px] mx-auto my-32">
+        <div class="w-full flex justify-center gap-[118px]">
+            <div class="product-info flex flex-col gap-4 w-min h-fit mt-[18px]">
+                <h1 class="font-semibold text-[32px] ">Checkout Product</h1>
+                <div class="product-detail flex flex-col gap-3">
+                    <div class="thumbnail w-[412px] h-[255px] flex shrink-0 rounded-[20px] overflow-hidden">
+                        <img src="../assets/thumbnails/checkout.png" class="w-full h-full object-cover"
+                            alt="thumbnail">
+                    </div>
+                    <div class="product-title flex flex-col gap-[30px]">
+                        <div class="flex flex-col gap-3">
+                            <p class="font-semibold">Huis Elite: The Complete Smart Home App UI Kit for Modern Living
+                            </p>
+                            <p
+                                class="bg-[#2A2A2A] font-semibold text-xs text-creativehub-grey rounded-[4px] p-[4px_6px] w-fit">
+                                UI Kit</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 rounded-full flex shrink-0 overflow-hidden">
+                                    <img src="../assets/logos/vekotora.svg" alt="logo">
+                                </div>
+                                <p class="font-semibold text-creativehub-grey">Vekotora</p>
+                            </div>
+                            <p
+                                class="font-semibold text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#B05CB0] to-[#FCB16B]">
+                                Rp 233,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form
+                class="flex flex-col p-[30px] gap-[60px] rounded-[20px] w-[450px] border-2 border-creativehub-darker-grey">
+                <div class="w-full flex flex-col gap-4">
+                    <p class="font-semibold text-xl">Transfer to:</p>
+                    <div class="flex flex-col gap-3">
+                        <div class="flex gap-3">
+                            <div
+                                class="flex items-center gap-1 p-[12px_20px] pl-4 w-[163px] justify-between rounded-lg bg-[#181818] hover:ring-[1px] hover:ring-[#A0A0A0] focus:ring-[1px] focus:ring-[#A0A0A0] transition-all duration-300">
+                                <div class="flex flex-col">                                
+                                    <label for="bank" class="text-xs text-creativehub-grey pl-1">Payment Method</label>
+                                    <select name="bank" id="bank"
+                                        class="mt-1 font-semibold bg-transparent appearance-none border-none outline-none px-1 invalid:text-[#595959] invalid:font-normal invalid:text-sm"
+                                        required>
+                                        <option class="text-creativehub-black" value="Angga Bank" selected>Mandiri</option>
+                                        <option class="text-creativehub-black" value="Angga Bank">Dana</option>
+                                        <option class="text-creativehub-black" value="Angga Bank">OVO</option>
+                                        <option class="text-creativehub-black" value="Angga Bank">Gopay</option>
+                                        <option class="text-creativehub-black" value="Angga Bank">BTN</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="w-6 h-6 flex shrink-0">
+                                    <img src="../assets/icons/bank.svg" alt="icon">
+                                </div> -->
+                            </div>
+                            <div
+                                class="flex items-center gap-1 p-[12px_20px] pl-4 w-[215px] justify-between rounded-lg bg-[#181818] hover:ring-[1px] hover:ring-[#A0A0A0] focus:ring-[1px] focus:ring-[#A0A0A0] transition-all duration-300">
+                                <div class="flex flex-col w-full">
+                                    <label for="name" class="text-xs text-creativehub-grey pl-1">Account Name</label>
+                                    <div class="flex mt-1 items-center max-w-[149px]">
+                                        <input disabled type="text" name="name" value="Angga Pratama" id="name"
+                                            class="font-semibold bg-transparent appearance-none autofull-no-bg outline-none border-none px-1 placeholder:text-[#595959] placeholder:font-normal placeholder:text-sm w-full"
+                                            placeholder="Type here" required></input>
+                                    </div>
+                                </div>
+                                <div class="w-6 h-6 flex shrink-0">
+                                    <img src="../assets/icons/user-square.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-1 p-[12px_20px] pl-4 justify-between rounded-lg bg-[#181818] hover:ring-[1px] hover:ring-[#A0A0A0] focus:ring-[1px] focus:ring-[#A0A0A0] transition-all duration-300">
+                            <div class="flex flex-col w-full">
+                                <label for="number" class="text-xs text-creativehub-grey pl-1">Account Number</label>
+                                <div class="flex mt-1 items-center max-w-[322px]">
+                                    <input type="tel" name="number" disabled id="number"
+                                        class="mt-1 font-semibold bg-transparent appearance-none autofull-no-bg border-none outline-none px-1 placeholder:text-[#595959] placeholder:font-normal placeholder:text-sm w-full"
+                                        placeholder="Type here" value="8938989812" pattern="[0-9 -]" required></input>
+                                </div>
+                            </div>
+                            <div class="w-6 h-6 flex shrink-0">
+                                <img src="../assets/icons/card.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col gap-4">
+                    <p class="font-semibold text-xl">Confirm Payment</p>
+                    <div class="flex flex-col gap-3">
+                        <p class="text-xs text-[#2D68F8] p-[10px_22px] rounded-lg bg-[#2D68F805]">Please upload proof of
+                            payment we will confirm it as soon as possible</p>
+                        <div class="flex gap-3">
+                            <button type="button"
+                                class="flex gap-2 shrink-0 w-[291px] h-[48px] p-[12px_18px] justify-center items-center border border-dashed border-[#595959] rounded-lg hover:bg-[#2A2A2A] transition-all duration-300"
+                                onclick="document.getElementById('proof').click()">
+                                <p>Choose File</p>
+                                <img src="../assets/icons/document-upload.svg" alt="icon">
+                            </button>
+                            <input type="file" name="proof" id="proof" class="hidden" onchange="previewFile()" required>
+                            <div class="relative rounded-lg overflow-hidden bg-[#181818] w-full h-[48px]">
+                                <div class="relative file-preview z-10 w-full h-full hidden">
+                                    <img src="../assets/icons/check.svg"
+                                        class="check-icon absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                        alt="icon">
+                                    <img src="" class="thumbnail-proof w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <img src="../assets/icons/gallery.svg"
+                                    class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                    alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="success-checkout.html"
+                        class="rounded-full text-center bg-[#2D68F8] p-[8px_18px] font-semibold hover:bg-[#083297] active:bg-[#062162] transition-all duration-300">Checkout
+                        Now</a>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+	<footer class="bg-[#181818]">
+		<div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+			<div class="md:flex md:justify-between">
+			<div class="mb-6 md:mb-0">
+				<a href="index.html" class="flex items-center">
+					<img src="../assets/logos/logo-singgle.svg" class="h-8 me-3" alt="FlowBite Logo" />
+					<span class="self-center text-2xl font-semibold whitespace-nowrap text-white">CreativeHub</span>
+				</a>
+			</div>
+			<div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4">
+				<div class="w-fit px-3">
+					<h2 class="mb-6 text-sm font-semibold uppercase text-white">Browse</h2>
+					<ul class="text-gray-500 dark:text-gray-400 font-normal">
+						<li class="mb-2">
+							<a href="" class="hover:underline">All Products</a>
+						</li>
+						<li class="mb-2">
+							<a href="" class="hover:underline">Templates</a>
+						</li>
+						<li class="mb-2">
+							<a href="" class="hover:underline">E-Books</a>
+						</li>
+						<li class="mb-2">
+							<a href="" class="hover:underline">Icons</a>
+						</li>
+						<li class="mb-2">
+							<a href="" class="hover:underline">Fonts</a>
+						</li>
+						<li class="mb-2">
+							<a href="" class="hover:underline">UI Kits</a>
+						</li>
+					</ul>
+				</div>
+				<div class="w-fit px-3">
+					<h2 class="mb-6 text-sm font-semibold uppercase text-white">Platform</h2>
+					<ul class="text-gray-500 dark:text-gray-400 font-normal">
+						<li class="mb-2">
+							<a href="" class="hover:underline ">All-access pass</a>
+						</li>
+						<li class="mb-2">
+							<a href="" class="hover:underline">Become an author</a>
+						</li>
+						<li class="mb-2">
+							<a href="" class="hover:underline">Affiliate program</a>
+						</li>
+						<li class="mb-2">
+							<a href="" class="hover:underline">Terms & Licensing</a>
+						</li>
+					</ul>
+				</div>
+				<div class="w-fit px-3">
+					<h2 class="mb-6 text-sm font-semibold uppercase text-white">Customer Service</h2>
+					<ul class="text-gray-500 dark:text-gray-400 font-normal">
+						<li class="mb-2">
+							<a href="#" class="hover:underline">FAQ</a>
+						</li>
+						<li class="mb-2">
+							<a href="#" class="hover:underline">Orders</a>
+						</li>
+						<li class="mb-2">
+							<a href="#" class="hover:underline">Payments</a>
+						</li>
+						<li class="mb-2">
+							<a href="#" class="hover:underline">Refunds</a>
+						</li>
+					</ul>
+				</div>
+				<div class="w-fit px-3">
+					<h2 class="mb-6 text-sm font-semibold uppercase text-white">Contact Us</h2>
+					<ul class="text-gray-500 dark:text-gray-400 font-normal">
+						<li class="mb-2">
+							<a href="#" class="hover:underline">About us</a>
+						</li>
+						<li class="mb-2">
+							<a href="#" class="hover:underline">Company</a>
+						</li>
+						<li class="mb-2">
+							<a href="#" class="hover:underline">Careers</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+		<div class="sm:flex sm:items-center sm:justify-between">
+			<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="" class="hover:underline">CreativeHub™</a> - Made With 💜 Husni Mubarok.
+			</span>
+			<div class="flex mt-4 sm:justify-center sm:mt-0">
+				<a href="#" class="text-gray-500 hover:text-white">
+					<svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+							<path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+						</svg>
+					<span class="sr-only">Facebook page</span>
+				</a>
+				<a href="#" class="text-gray-500 hover:text-white ms-5">
+					<svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+							<path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+						</svg>
+					<span class="sr-only">Discord community</span>
+				</a>
+				<a href="#" class="text-gray-500 hover:text-white ms-5">
+					<svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+						<path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+					</svg>
+					<span class="sr-only">Twitter page</span>
+				</a>
+				<a href="#" class="text-gray-500 hover:text-white ms-5">
+					<svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+					</svg>
+					<span class="sr-only">GitHub account</span>
+				</a>
+				<a href="#" class="text-gray-500 hover:text-white ms-5">
+					<svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+						<path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+					</svg>
+					<span class="sr-only">Dribbble account</span>
+				</a>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+
+    <!-- Flowbite Plugins -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Swiper.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        function previewFile() {
+            var preview = document.querySelector('.file-preview');
+            var fileInput = document.querySelector('input[type=file]').files[0];
+            var reader = new FileReader();
+
+            reader.onloadend = function () {
+                var img = preview.querySelector('.thumbnail-proof'); // Get the thumbnail image element
+                img.src = reader.result; // Update src attribute with the uploaded file
+                preview.classList.remove('hidden'); // Remove the 'hidden' class to display the preview
+            }
+
+            if (fileInput) {
+                reader.readAsDataURL(fileInput);
+            } else {
+                preview.classList.add('hidden'); // Hide preview if no file selected
+            }
+        }
+
+        function copyTextFunc(id) {
+            var copyText = document.getElementById(id);
+
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            document.execCommand("copy");
+
+            alert("Copied the text: " + copyText.value);
+        }
+    </script>
+</body>
+</html>
