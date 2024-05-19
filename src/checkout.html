@@ -18,7 +18,7 @@
 				<img src="../assets/logos/logo-singgle.svg" class="h-8" alt="Flowbite Logo" />
 				<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CreativeHub</span>
 			</a>
-			<button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:text-gray-600 dark:hover:bg-gray-200 dark:focus:ring-gray-400 "
+			<button id="navbar-toggle" data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:text-gray-600 dark:hover:bg-gray-200 dark:focus:ring-gray-400 "
 			aria-controls="mega-menu-full" aria-expanded="false">
 				<span class="sr-only">Open main menu</span>
 				<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -137,12 +137,13 @@
 		</div>
 	</nav>
 
-    <section id="checkout" class="container max-w-[1200px] mx-auto my-32">
-        <div class="w-full flex justify-center gap-[118px]">
-            <div class="product-info flex flex-col gap-4 w-min h-fit mt-[18px]">
-                <h1 class="font-semibold text-[32px] ">Checkout Product</h1>
+    <!-- Checkout Section -->
+    <section id="checkout" class="container max-w-[1200px] px-4 mx-auto my-32 flex flex-col gap-8 w-full">
+        <div class="items-center gap-4 grid grid-cols-1 md:grid-cols-2">
+            <div class="product-info flex flex-col gap-4 w-full h-fit bg-creativehub-dark-footer p-[40px_24px] sm:p-[36px_64px] rounded-[20px] ">
+                <h1 class="font-semibold text-2xl sm:text-[32px] ">Checkout Product</h1>
                 <div class="product-detail flex flex-col gap-3">
-                    <div class="thumbnail w-[412px] h-[255px] flex shrink-0 rounded-[20px] overflow-hidden">
+                    <div class="thumbnail w-fit h-auto flex shrink-0 rounded-[20px] overflow-hidden">
                         <img src="../assets/thumbnails/checkout.png" class="w-full h-full object-cover"
                             alt="thumbnail">
                     </div>
@@ -154,7 +155,7 @@
                                 class="bg-[#2A2A2A] font-semibold text-xs text-creativehub-grey rounded-[4px] p-[4px_6px] w-fit">
                                 UI Kit</p>
                         </div>
-                        <div class="flex justify-between items-center">
+                        <div class="flex justify-between items-center flex-wrap gap-y-3">
                             <div class="flex items-center gap-2">
                                 <div class="w-8 h-8 rounded-full flex shrink-0 overflow-hidden">
                                     <img src="../assets/logos/vekotora.svg" alt="logo">
@@ -162,20 +163,20 @@
                                 <p class="font-semibold text-creativehub-grey">Vekotora</p>
                             </div>
                             <p
-                                class="font-semibold text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#B05CB0] to-[#FCB16B]">
+                                class="font-semibold text-2xl sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#B05CB0] to-[#FCB16B]">
                                 Rp 233,000</p>
                         </div>
                     </div>
                 </div>
             </div>
+
             <form
-                class="flex flex-col p-[30px] gap-[60px] rounded-[20px] w-[450px] border-2 border-creativehub-darker-grey">
+                class="flex flex-col p-[30px] gap-[60px] rounded-[20px] w-full h-fit border-2 border-creativehub-darker-grey">
                 <div class="w-full flex flex-col gap-4">
                     <p class="font-semibold text-xl">Transfer to:</p>
                     <div class="flex flex-col gap-3">
                         <div class="flex gap-3">
-                            <div
-                                class="flex items-center gap-1 p-[12px_20px] pl-4 w-[163px] justify-between rounded-lg bg-[#181818] hover:ring-[1px] hover:ring-[#A0A0A0] focus:ring-[1px] focus:ring-[#A0A0A0] transition-all duration-300">
+                            <div  class="flex items-center gap-1 p-[12px_20px] pl-4 w-full justify-between rounded-lg bg-[#181818] hover:ring-[1px] hover:ring-[#A0A0A0] focus:ring-[1px] focus:ring-[#A0A0A0] transition-all duration-300">
                                 <div class="flex flex-col">                                
                                     <label for="bank" class="text-xs text-creativehub-grey pl-1">Payment Method</label>
                                     <select name="bank" id="bank"
@@ -188,12 +189,13 @@
                                         <option class="text-creativehub-black" value="Angga Bank">BTN</option>
                                     </select>
                                 </div>
-                                <!-- <div class="w-6 h-6 flex shrink-0">
+                                <div class="w-6 h-6 flex shrink-0">
                                     <img src="../assets/icons/bank.svg" alt="icon">
-                                </div> -->
+                                </div>
                             </div>
-                            <div
-                                class="flex items-center gap-1 p-[12px_20px] pl-4 w-[215px] justify-between rounded-lg bg-[#181818] hover:ring-[1px] hover:ring-[#A0A0A0] focus:ring-[1px] focus:ring-[#A0A0A0] transition-all duration-300">
+                        </div>
+                        <div class="flex">
+                            <div class="flex items-center gap-1 p-[12px_20px] pl-4 w-full justify-between rounded-lg bg-[#181818] hover:ring-[1px] hover:ring-[#A0A0A0] focus:ring-[1px] focus:ring-[#A0A0A0] transition-all duration-300">
                                 <div class="flex flex-col w-full">
                                     <label for="name" class="text-xs text-creativehub-grey pl-1">Account Name</label>
                                     <div class="flex mt-1 items-center max-w-[149px]">
@@ -207,8 +209,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="flex items-center gap-1 p-[12px_20px] pl-4 justify-between rounded-lg bg-[#181818] hover:ring-[1px] hover:ring-[#A0A0A0] focus:ring-[1px] focus:ring-[#A0A0A0] transition-all duration-300">
+                        <div class="flex items-center gap-1 p-[12px_20px] pl-4 justify-between rounded-lg bg-[#181818] hover:ring-[1px] hover:ring-[#A0A0A0] focus:ring-[1px] focus:ring-[#A0A0A0] transition-all duration-300">
                             <div class="flex flex-col w-full">
                                 <label for="number" class="text-xs text-creativehub-grey pl-1">Account Number</label>
                                 <div class="flex mt-1 items-center max-w-[322px]">
@@ -230,7 +231,7 @@
                             payment we will confirm it as soon as possible</p>
                         <div class="flex gap-3">
                             <button type="button"
-                                class="flex gap-2 shrink-0 w-[291px] h-[48px] p-[12px_18px] justify-center items-center border border-dashed border-[#595959] rounded-lg hover:bg-[#2A2A2A] transition-all duration-300"
+                                class="flex gap-2 shrink-0 w-2/3 h-[48px] p-[12px_18px] justify-center items-center border border-dashed border-[#595959] rounded-lg hover:bg-[#2A2A2A] transition-all duration-300"
                                 onclick="document.getElementById('proof').click()">
                                 <p>Choose File</p>
                                 <img src="../assets/icons/document-upload.svg" alt="icon">
@@ -253,7 +254,6 @@
                         class="rounded-full text-center bg-[#2D68F8] p-[8px_18px] font-semibold hover:bg-[#083297] active:bg-[#062162] transition-all duration-300">Checkout
                         Now</a>
                 </div>
-
             </form>
         </div>
     </section>
@@ -385,43 +385,13 @@
 
     <!-- Flowbite Plugins -->
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-
+	<!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
+	<!-- Flickity -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
     <!-- Swiper.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        function previewFile() {
-            var preview = document.querySelector('.file-preview');
-            var fileInput = document.querySelector('input[type=file]').files[0];
-            var reader = new FileReader();
-
-            reader.onloadend = function () {
-                var img = preview.querySelector('.thumbnail-proof'); // Get the thumbnail image element
-                img.src = reader.result; // Update src attribute with the uploaded file
-                preview.classList.remove('hidden'); // Remove the 'hidden' class to display the preview
-            }
-
-            if (fileInput) {
-                reader.readAsDataURL(fileInput);
-            } else {
-                preview.classList.add('hidden'); // Hide preview if no file selected
-            }
-        }
-
-        function copyTextFunc(id) {
-            var copyText = document.getElementById(id);
-
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); // For mobile devices
-
-            document.execCommand("copy");
-
-            alert("Copied the text: " + copyText.value);
-        }
-    </script>
+	<!-- Main.js Script -->
+    <script src="main.js"></script>
 </body>
 </html>

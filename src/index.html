@@ -55,130 +55,128 @@
 <body class="bg-creativehub-black font-poppins text-white">
 	
 	<!-- Navbar -->
-	<nav class="w-full fixed top-0 bg-[#00000048] backdrop-blur-lg z-50">
-		<div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-			<a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-				<img src="../assets/logos/logo-singgle.svg" class="h-8" alt="Flowbite Logo" />
-				<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CreativeHub</span>
-			</a>
-			<button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:text-gray-600 dark:hover:bg-gray-200 dark:focus:ring-gray-400 "
-			aria-controls="mega-menu-full" aria-expanded="false">
-				<span class="sr-only">Open main menu</span>
-				<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-				</svg>
-			</button>
-			<div id="mega-menu-full" class="items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1">
-				<ul class="flex flex-col p-4 md:p-0 mt-4 border border-[#ffffff10] rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
-					<li>
-						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300" aria-current="page">Home</a>
-					</li>
-					<li>
-						<button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Categories <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
-						</button>
-					</li>
-					<li>
-						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Stories</a>
-					</li>
-					<li>
-						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Benefits</a>
-					</li>
-					<li>
-						<a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">About</a>
-					</li>
-				</ul>
-			</div>
-
-			
-		</div>
-		<div id="mega-menu-full-dropdown" class="mt-1 bg-[#1E1E1E] border border-[#414141] hidden">
-			<div class="grid gap-3 max-w-screen-xl px-4 py-4 mx-auto sm:grid-cols-2 md:px-6">
-				<ul class="grid gap-y-3">
-					<li>
-						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
-							<div class="flex gap-x-3 items-center">
-								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
-									<img src="../assets/icons/cart.svg" alt="icon" class="sm:w-full sm:h-auto">
-								</div>
-								<div class="flex flex-col gap-1">
-									<div class="font-semibold text-[10px] lg:text-sm text-white">All Products</div>
-									<span class="text-[8px] lg:text-xs text-creativehub-grey">Everything in One Place</span>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
-							<div class="flex gap-x-3 items-center">
-								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
-									<img src="../assets/icons/laptop.svg" alt="icon" class="sm:w-full sm:h-auto">
-								</div>
-								<div class="flex flex-col gap-1">
-									<div class="font-semibold text-[10px] lg:text-sm text-white">Templates</div>
-									<span class="text-[8px] lg:text-xs text-creativehub-grey">Design Made Easy</span>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
-							<div class="flex gap-x-3 items-center">
-								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
-									<img src="../assets/icons/book.svg" alt="icon" class="sm:w-full sm:h-auto">
-								</div>
-								<div class="flex flex-col gap-1">
-									<div class="font-semibold text-[10px] lg:text-sm text-white">E-Books</div>
-									<span class="text-[8px] lg:text-xs text-creativehub-grey">Read and Learn</span>
-								</div>
-							</div>
-						</a>
-					</li>
-				</ul>
-				<ul class="grid gap-y-3">
-					<li>
-						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
-							<div class="flex gap-x-3 items-center">
-								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
-									<img src="../assets/icons/hat.svg" alt="icon" class="sm:w-full sm:h-auto">
-								</div>
-								<div class="flex flex-col gap-1">
-									<div class="font-semibold text-[10px] lg:text-sm text-white">Icons</div>
-									<span class="text-[8px] lg:text-xs text-creativehub-grey">Icon Pack Selection</span>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
-							<div class="flex gap-x-3 items-center">
-								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px] flex shrink-0 items-center">
-									<img src="../assets/icons/pen.svg" alt="icon">
-								</div>
-								<div class="flex flex-col gap-1">
-									<div class="font-semibold text-[10px] lg:text-sm text-white">Fonts</div>
-									<span class="text-[8px] lg:text-xs text-creativehub-grey">Typography Selection</span>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
-							<div class="flex gap-x-3 items-center">
-								<div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px] flex shrink-0 items-center">
-									<img src="../assets/icons/check-3d.svg" alt="icon">
-								</div>
-								<div class="flex flex-col gap-1">
-									<div class="font-semibold text-[10px] lg:text-sm text-white">UI Kits</div>
-									<span class="text-[8px] lg:text-xs text-creativehub-grey">Best of Design Resources</span>
-								</div>
-							</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+    <nav class="w-full fixed top-0 bg-[#00000048] backdrop-blur-lg z-50">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="../assets/logos/logo-singgle.svg" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CreativeHub</span>
+            </a>
+            <button id="navbar-toggle" data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:text-gray-600 dark:hover:bg-gray-200 dark:focus:ring-gray-400 "
+            aria-controls="mega-menu-full" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div id="mega-menu-full" class="items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 border border-[#ffffff10] rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Categories <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Stories</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">Benefits</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-creativehub-grey hover:text-creativehub-light-grey transition-all duration-300">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="mega-menu-full-dropdown" class="mt-1 bg-[#1E1E1E] border border-[#414141] hidden">
+            <div class="grid gap-3 max-w-screen-xl px-4 py-4 mx-auto sm:grid-cols-2 md:px-6">
+                <ul class="grid gap-y-3">
+                    <li>
+                        <a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+                            <div class="flex gap-x-3 items-center">
+                                <div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+                                    <img src="../assets/icons/cart.svg" alt="icon" class="sm:w-full sm:h-auto">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <div class="font-semibold text-[10px] lg:text-sm text-white">All Products</div>
+                                    <span class="text-[8px] lg:text-xs text-creativehub-grey">Everything in One Place</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+                            <div class="flex gap-x-3 items-center">
+                                <div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+                                    <img src="../assets/icons/laptop.svg" alt="icon" class="sm:w-full sm:h-auto">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <div class="font-semibold text-[10px] lg:text-sm text-white">Templates</div>
+                                    <span class="text-[8px] lg:text-xs text-creativehub-grey">Design Made Easy</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+                            <div class="flex gap-x-3 items-center">
+                                <div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+                                    <img src="../assets/icons/book.svg" alt="icon" class="sm:w-full sm:h-auto">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <div class="font-semibold text-[10px] lg:text-sm text-white">E-Books</div>
+                                    <span class="text-[8px] lg:text-xs text-creativehub-grey">Read and Learn</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="grid gap-y-3">
+                    <li>
+                        <a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+                            <div class="flex gap-x-3 items-center">
+                                <div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px]  flex shrink-0 items-center">
+                                    <img src="../assets/icons/hat.svg" alt="icon" class="sm:w-full sm:h-auto">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <div class="font-semibold text-[10px] lg:text-sm text-white">Icons</div>
+                                    <span class="text-[8px] lg:text-xs text-creativehub-grey">Icon Pack Selection</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+                            <div class="flex gap-x-3 items-center">
+                                <div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px] flex shrink-0 items-center">
+                                    <img src="../assets/icons/pen.svg" alt="icon">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <div class="font-semibold text-[10px] lg:text-sm text-white">Fonts</div>
+                                    <span class="text-[8px] lg:text-xs text-creativehub-grey">Typography Selection</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block p-3 rounded-lg border border-[#414141] hover:bg-[#2A2A2A] transition-all duration-300">
+                            <div class="flex gap-x-3 items-center">
+                                <div class="w-[36px] h-[36px] lg:w-[58px] lg:h-[58px] flex shrink-0 items-center">
+                                    <img src="../assets/icons/check-3d.svg" alt="icon">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <div class="font-semibold text-[10px] lg:text-sm text-white">UI Kits</div>
+                                    <span class="text-[8px] lg:text-xs text-creativehub-grey">Best of Design Resources</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 	<!-- Hero Section -->
 	<header
@@ -188,7 +186,7 @@
                 <h1 class="font-semibold text-3xl leading-[130%] md:text-[60px] xl:text-[60px]">Explore High Quality<br>Digital Products</h1>
                 <p class="text-xs md:text-lg lg:text-lg text-creativehub-grey">Change the way you work to achieve better results.</p>
                 <div class="flex gap-6 items-center mt-4">
-                    <a href="" class="bg-clip text-transparent bg-gradient-to-tr from-[#B05CB0] to-[#FCB16B] transition-all duration-1000 text-white p-[16px_40px] w-fit h-fit rounded-[12px]  text-xs md:text-xl lg:text-xl font-semibold hover:from-[#FCB16B] hover:to-[#B05CB0]">Log in</a>
+                    <a href="" class="bg-clip text-transparent bg-gradient-to-tr from-[#B05CB0] to-[#FCB16B] transition-all duration-1000 text-white p-[16px_40px] w-fit h-fit rounded-[12px]  text-xs md:text-xl lg:text-xl font-semibold hover:from-[#FCB16B] hover:to-[#B05CB0] shadow-lg shadow-pink-500/50">Log in</a>
                     <a href="" class="p-[16px_40px] w-fit h-fit rounded-[12px] text-creativehub-grey border border-creativehub-dark-grey hover:bg-[#2A2A2A] hover:text-white transition-all duration-300 text-xs md:text-xl lg:text-xl font-semibold">Sign up</a>
                 </div>
             </div>
@@ -359,19 +357,19 @@
                         <div class="w-6 h-6 flex shrink-0 items-center justify-center rounded-full overflow-hidden">
                             <img src="../assets/logos/framer.png" class="w-full h-full object-cover" alt="logo">
                         </div>
-                        <a href="" class="font-semibold text-xs text-creativehub-grey">Framer</a>
+                        <a href="" class="font-semibold text-xs text-creativehub-grey">Jaog Framer</a>
                     </div>
                 </div>
             </div>
             <div class="product-card flex flex-col rounded-[18px] bg-[#181818] overflow-hidden">
                 <a href="details.html" class="thumbnail w-full h-[180px] flex shrink-0 overflow-hidden relative">
-                    <img src="../assets/thumbnails/img2.png" class="w-full h-full object-cover" alt="thumbnail">
+                    <img src="../assets/thumbnails/img5.png" class="w-full h-full object-cover" alt="thumbnail">
                     <p class="backdrop-blur bg-black/30 rounded-[4px] p-[4px_8px] absolute top-3 right-[14px] z-7">Rp
-                        179,000</p>
+                        499,000</p>
                 </a>
                 <div class="p-[10px_14px_12px] h-full flex flex-col justify-between gap-[14px]">
                     <div class="flex flex-col gap-1">
-                        <a href="details.html" class="font-semibold text-xs md:text-lg lg:text-lg line-clamp-2 hover:line-clamp-none">Homey: Real Estate Mobile UI Kit</a>
+                        <a href="details.html" class="font-semibold text-xs md:text-lg lg:text-lg line-clamp-2 hover:line-clamp-none">Gamify-RPG: 3D Illustration & Icon Pack</a>
                         <p
                             class="bg-[#2A2A2A] text-[10px] md:text-xs lg:text-xs text-creativehub-grey rounded-[4px] p-[4px_6px] w-fit">
                             UI Kit</p>
@@ -386,14 +384,55 @@
             </div>
             <div class="product-card flex flex-col rounded-[18px] bg-[#181818] overflow-hidden">
                 <a href="details.html" class="thumbnail w-full h-[180px] flex shrink-0 overflow-hidden relative">
-                    <img src="../assets/thumbnails/img1.png" class="w-full h-full object-cover" alt="thumbnail">
+                    <img src="../assets/thumbnails/img6.png" class="w-full h-full object-cover" alt="thumbnail">
                     <p class="backdrop-blur bg-black/30 rounded-[4px] p-[4px_8px] absolute top-3 right-[14px] z-7">Rp
-                        129,000</p>
+                        113,000</p>
                 </a>
                 <div class="p-[10px_14px_12px] h-full flex flex-col justify-between gap-[14px]">
                     <div class="flex flex-col gap-1">
-                        <a href="details.html" class="font-semibold text-xs md:text-lg lg:text-lg line-clamp-2 hover:line-clamp-none">SaaS Website
-                            Master Template: Streamline Your Digital Solution</a>
+                        <a href="details.html" class="font-semibold text-xs md:text-lg lg:text-lg line-clamp-2 hover:line-clamp-none">Hand Gesture Icon Pack</a>
+                        <p
+                            class="bg-[#2A2A2A] text-[10px] md:text-xs lg:text-xs text-creativehub-grey rounded-[4px] p-[4px_6px] w-fit">
+                            Icon</p>
+                    </div>
+                    <div class="flex items-center gap-[6px]">
+                        <div class="w-6 h-6 flex shrink-0 items-center justify-center rounded-full overflow-hidden">
+                            <img src="../assets/logos/framer.png" class="w-full h-full object-cover" alt="logo">
+                        </div>
+                        <a href="" class="font-semibold text-xs text-creativehub-grey">Jaog Framer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card flex flex-col rounded-[18px] bg-[#181818] overflow-hidden">
+                <a href="details.html" class="thumbnail w-full h-[180px] flex shrink-0 overflow-hidden relative">
+                    <img src="../assets/thumbnails/img7.png" class="w-full h-full object-cover" alt="thumbnail">
+                    <p class="backdrop-blur bg-black/30 rounded-[4px] p-[4px_8px] absolute top-3 right-[14px] z-7">Rp
+                        75,000</p>
+                </a>
+                <div class="p-[10px_14px_12px] h-full flex flex-col justify-between gap-[14px]">
+                    <div class="flex flex-col gap-1">
+                        <a href="details.html" class="font-semibold text-xs md:text-lg lg:text-lg line-clamp-2 hover:line-clamp-none">Kirgina Fonts Family</a>
+                        <p
+                            class="bg-[#2A2A2A] text-[10px] md:text-xs lg:text-xs text-creativehub-grey rounded-[4px] p-[4px_6px] w-fit">
+                            Font</p>
+                    </div>
+                    <div class="flex items-center gap-[6px]">
+                        <div class="w-6 h-6 flex shrink-0 items-center justify-center rounded-full overflow-hidden">
+                            <img src="../assets/logos/JNKK.svg" class="w-full h-full object-cover" alt="logo">
+                        </div>
+                        <a href="" class="font-semibold text-xs text-creativehub-grey">John Doe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card flex flex-col rounded-[18px] bg-[#181818] overflow-hidden">
+                <a href="details.html" class="thumbnail w-full h-[180px] flex shrink-0 overflow-hidden relative">
+                    <img src="../assets/thumbnails/img-8.png" class="w-full h-full object-cover" alt="thumbnail">
+                    <p class="backdrop-blur bg-black/30 rounded-[4px] p-[4px_8px] absolute top-3 right-[14px] z-7">Rp
+                        799,000</p>
+                </a>
+                <div class="p-[10px_14px_12px] h-full flex flex-col justify-between gap-[14px]">
+                    <div class="flex flex-col gap-1">
+                        <a href="details.html" class="font-semibold text-xs md:text-lg lg:text-lg line-clamp-2 hover:line-clamp-none">Akio: Framer Portfolio Template</a>
                         <p
                             class="bg-[#2A2A2A] text-[10px] md:text-xs lg:text-xs text-creativehub-grey rounded-[4px] p-[4px_6px] w-fit">
                             Template</p>
@@ -402,28 +441,26 @@
                         <div class="w-6 h-6 flex shrink-0 items-center justify-center rounded-full overflow-hidden">
                             <img src="../assets/logos/framer.png" class="w-full h-full object-cover" alt="logo">
                         </div>
-                        <a href="" class="font-semibold text-xs text-creativehub-grey">Framer</a>
+                        <a href="" class="font-semibold text-xs text-creativehub-grey">Jaog Framer</a>
                     </div>
                 </div>
             </div>
             <div class="product-card flex flex-col rounded-[18px] bg-[#181818] overflow-hidden">
                 <a href="details.html" class="thumbnail w-full h-[180px] flex shrink-0 overflow-hidden relative">
-                    <img src="../assets/thumbnails/img2.png" class="w-full h-full object-cover" alt="thumbnail">
+                    <img src="../assets/thumbnails/img3.png" class="w-full h-full object-cover" alt="thumbnail">
                     <p class="backdrop-blur bg-black/30 rounded-[4px] p-[4px_8px] absolute top-3 right-[14px] z-7">Rp
-                        179,000</p>
+                        303,000</p>
                 </a>
                 <div class="p-[10px_14px_12px] h-full flex flex-col justify-between gap-[14px]">
                     <div class="flex flex-col gap-1">
-                        <a href="details.html" class="font-semibold text-xs md:text-lg lg:text-lg line-clamp-2 hover:line-clamp-none">Homey: Real Estate Mobile UI Kit</a>
-                        <p
-                            class="bg-[#2A2A2A] text-[10px] md:text-xs lg:text-xs text-creativehub-grey rounded-[4px] p-[4px_6px] w-fit">
-                            UI Kit</p>
+                        <a href="details.html" class="font-semibold text-xs md:text-lg lg:text-lg line-clamp-2 hover:line-clamp-none">OSLER UI Kit: AI Telehealth & Telemedicine Website</a>
+                        <p class="bg-[#2A2A2A] text-[10px] md:text-xs lg:text-xs text-creativehub-grey rounded-[4px] p-[4px_6px] w-fit">UI Kit</p>
                     </div>
                     <div class="flex items-center gap-[6px]">
                         <div class="w-6 h-6 flex shrink-0 items-center justify-center rounded-full overflow-hidden">
-                            <img src="../assets/logos/JNKK.svg" class="w-full h-full object-cover" alt="logo">
+                            <img src="../assets/icons/ydntkwia.svg" class="w-full h-full object-cover" alt="logo">
                         </div>
-                        <a href="" class="font-semibold text-xs text-creativehub-grey">John Doe</a>
+                        <a href="" class="font-semibold text-xs text-creativehub-grey">BG. YDNTKWIA</a>
                     </div>
                 </div>
             </div>
@@ -1381,62 +1418,13 @@
 
 	<!-- Flowbite Plugins -->
 	<script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-
+    <!-- JQuery -->
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
+    <!-- Flickity -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	
 	<!-- Swiper.js CDN -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-	<script>
-		// Search Function
-        const searchInput = document.getElementById('searchInput');
-        const resetButton = document.getElementById('resetButton');
-
-        searchInput.addEventListener('input', function () {
-            if (this.value.trim() !== '') {
-                resetButton.classList.remove('hidden');
-            } else {
-                resetButton.classList.add('hidden');
-            }
-        });
-
-        resetButton.addEventListener('click', function () {
-            resetButton.classList.add('hidden');
-        });
-
-		// Testimonial Function
-		let swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 28,
-            centeredSlides: false,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                    centeredSlides: false,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 28,
-                    centeredSlides: false,
-                },
-                1024: {
-                    slidesPerView: 2,
-                    spaceBetween: 32,
-                },
-            },
-        });
-    </script>
+    <!-- Main.js Script -->
+    <script src="main.js"></script>
 </body>
 </html>
